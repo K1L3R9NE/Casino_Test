@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+#include <ctime>
+using namespace std;
+
+
+void main()
+{
+	long double diam;
+	long double Pp= 3.14159265358979;
+
+	cout << "Please enter diameter" << endl;
+	cin >> diam;
+	
+
+	
+	long double llonger = diam*Pp ;
+	long double rad = diam / 2;
+
+	cout << " Long is : "<< llonger << " Radius is: "<< rad   <<endl;
+	
+	 
+
+
+
+
+
+
+}

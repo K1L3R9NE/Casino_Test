@@ -1,0 +1,137 @@
+cout << "Hello World" << endl;
+
+
+
+setlocale(LC_ALL, "Rus");
+
+
+
+
+//coment
+/*coment*/
+
+
+
+\a	Звонок (предупреждение)
+\b	Backspace
+\f	Перевод страницы
+\n	Новая строка
+\r	Возврат каретки
+\t	Горизонтальная табуляция
+\v	Вертикальная табуляция
+\'	Одиночная кавычка
+\"	Двойная кавычка
+\\	Обратная косая черта
+\?	Литерал вопросительного знака
+
+
+
+
+int a;
+a = 5;
+
+
+char a = 'f';
+
+
+bool a = 1;
+
+
+const int PI = 3.14159265;
+
+
+const char TAB = '\t';
+
+
+cin >> a >> b;
+
+
+a = -a;
+
+
+a++;
+a--;
+
+
+++a;
+a = a + 20;
+a += 20;
+
+
+
+cout << !(a == b) << endl;
+
+
+
+if (a == b)
+	{
+		cout << c << endl;
+	}
+	else if (a == g)
+	{
+		cout << d << endl;
+	}
+
+	else 
+	{
+		cout << f << endl;
+	}
+
+
+
+switch (a)
+{
+	case 1:
+		cout << а дорівнює одному << endl;
+		break;
+	case 2:
+		cout << а дорівнює двом << endl;
+		break;
+	case 3:
+		cout << а дорівнює трьом << endl;
+		break;
+	default:
+		cout << змінна не попадає ні під один кейс << endl;
+		break;			
+}
+
+
+
+
+while (a < 10)
+	{
+		a++;
+	}
+
+
+
+do {
+		a++;
+		cout << a << endl;
+	} while (a < 10);
+
+
+
+	for (a = 1; a < 10; a++;)
+		{
+
+		}
+
+
+for (int i = 1; ; a++;)
+		{
+			if (i == 5)
+			{
+			break;
+			}
+		}
+
+
+
+
+void Fun()
+{
+	cout << "Hello world" << endl;
+}
+
+Fun();

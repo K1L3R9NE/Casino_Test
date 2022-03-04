@@ -1,0 +1,81 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int value;
+int c;
+int d;
+
+
+int Sum( int a, int b)
+{ 
+	return (a + b); 
+}
+
+int Sub(int a, int b)
+{
+	return (a - b);
+}
+
+int Mnz(int a, int b)
+{
+	return (a * b);
+}
+
+int Dil(int a, int b)
+{
+	return (a / b);
+}
+
+
+
+int main()
+{
+	link:
+
+	cout << "Enter which operathion you want to do" << endl;
+	cout << "1 - Add" << endl;
+	cout << "2 - Substract" << endl;
+	cout << "3 - Multiply" << endl;
+	cout << "4 - Division" << endl;
+
+	cin >> value;
+
+	if (value >= 5 || value <= 0 )
+		{
+			cout << "You enter a wrong number" << endl;
+			goto link;
+		}
+
+
+	cout << "Enter first number" << endl;
+
+	cin >> c;
+
+	cout << "Enter second number" << endl;
+
+	cin >> d;
+
+	switch (value)
+	{
+	case 1:
+		cout << "Answer is - " << Sum(c, d) << endl;
+		break;
+	case 2:
+		cout << "Answer is - " << Sub(c, d) << endl;
+		break;
+	case 3:
+		cout << "Answer is - " << Mnz(c, d) << endl;
+		break;
+	case 4:
+		cout << "Answer is - " << Dil(c, d) << endl;
+		break;
+	default:
+		cout << "You enter a wrong number" << endl;
+		goto link;
+	}
+
+
+
+
+}

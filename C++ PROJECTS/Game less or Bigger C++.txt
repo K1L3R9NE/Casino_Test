@@ -1,0 +1,42 @@
+#include <iostream>
+#include <string>
+#include <ctime>
+using namespace std;
+
+
+void main()
+{
+	srand(time(NULL));
+	int result = rand();
+	int a;
+
+	cout << "Please enter a number";
+	cin >> a;
+
+	while (result != a)
+	{
+		cin >> a;
+		if (result == a)
+		{
+			cout << "You win!!!" << endl;
+		}
+		else if (a > result)
+		{
+			cout << "less" << endl;
+		}
+
+		else if (a < result)
+		{
+			cout << "bigger" << endl;
+		}
+	}
+
+
+
+
+
+
+
+
+
+}
