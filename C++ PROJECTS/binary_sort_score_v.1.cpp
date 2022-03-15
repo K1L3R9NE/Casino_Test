@@ -27,13 +27,15 @@ int ABS(int arr[], int num)
 	int low = 0; //lower border of array
 	int high = Size_Of_Arr(arr); //high border of array
 	
-	int score = 0;//SCORE does't need to this function //NEED TO SEPARATE IN #VISUAL_FOR_USER & #GAME
+	//SCORE does't need to this function //NEED TO SEPARATE IN #VISUAL_FOR_USER & #GAME
+	int score = NULL;
 
 	while (low <= high) 
 	{
-		int mid = (low + high) / 2; //ever time in cycle we have NEW HIGH (every time it closer)
+		int mid = ((low + high) / 2); //ever time in cycle we have NEW HIGH (every time it closer)
 
-		cout << "Mid is: " << mid <<  endl; //it need to user //MUST SEPARATE IN #VISUAL_FOR_USER
+		//cout << "Mid is: " << mid <<  endl; //it need to user //MUST SEPARATE IN #VISUAL_FOR_USER
+		
 		score++; //MUST SEPARATE IN #VISUAL_FOR_USER
 		
 		int guess = arr[mid];//operator to check, did we find a num
@@ -41,7 +43,7 @@ int ABS(int arr[], int num)
 			//if WIN
 			if (guess == num) 
 			{
-				cout << "Your score is: " << score << endl;
+				//cout << "Your score is: " << score << endl;
 				return score;
 			}
 			//OTHER OPERATIONS
@@ -57,23 +59,25 @@ int ABS(int arr[], int num)
 }
 
 //NUMMER AI
-int Num_AI(int score, int arry[])
+int Num_AI(int arry[])
 {
 	const int attempt = 10; 
-	int biggest = 1;
+	int biggest = NULL;
+	int a = NULL;
 
 	for (int j = 0; j < attempt; j++)
 	{
+		
 		int random = rand() % SIZE;
-		int score = ABS(arry, random);
-		if (score > biggest)
+		int score1 = ABS(arry, random);
+		if (score1 > biggest)
 		{
-			biggest = score;
+			biggest = score1;
+			a = biggest;
 		}
 	}
-	cout << "Biggest score is: " << score << endl;
-	return score;
-
+	return a;
+	//cout << "Biggest score is: " << biggest << endl;
 }
 
 int main()
@@ -87,7 +91,7 @@ int main()
 	}
 
 	//MAIN FUNCTION
-	Num_AI( ABS(array, USER_NUM), array);
+	cout << Num_AI(array);
 }
 
 
