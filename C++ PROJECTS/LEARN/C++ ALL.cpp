@@ -6,8 +6,13 @@
 #include <clocale> //Обязательно для функции setlocale()
 #include <cstdlib> // rand, srand
 #include <ctime> //time
-
-using namespace std; //std::
+#include <stdio.h> //math
+#include <stdlib.h> //math
+#include <math.h> //math
+#include <cstring>
+#include <conio.h>
+#include <Windows.h>
+using namespace std; //std:
 
 setlocale(LC_ALL, "Russian");
 
